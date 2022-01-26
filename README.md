@@ -8,12 +8,12 @@ It generates a constant and secure password out of 2 inputs: `Master Password` a
 For example: 
 |Master Password|Magic Word| Output|
 |----|-----|-----| 
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/twitter.com`|`g1Vh9OR\|rp#ADvMEbygdO@BCwGshw\|\|`| 
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/reddit.com`|`CnG18L7iqp\|oRyMGJJBIDCek)juQ`|
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/github.com`|`4r@E8yiS2F2Ke$z7XX1pG0Xr3zX=wzQB`|
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/twIttEr~cOm`|`g1Vh9OR\|rp#ADvMEbygdO@BCwGshw\|\|`| 
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/rEddIt~cOm`|`CnG18L7iqp\|oRyMGJJBIDCek)juQ`|
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/gIthUb~cOm`|`4r@E8yiS2F2Ke$z7XX1pG0Xr3zX=wzQB`|
 
 **[WARNING]: NEVER use similar syntax for Master Password and Magic Word as shown in examples above!                                         
-THIS WILL GIVE THE ATTACKER CLUES HOW TO BRUTEFORCE**
+This will give the attacker clues how to bruteforce!**
 
 Basically this "Password Manager" doesnt store anything and everything can be accessed anywhere.
 ## Is it secure?
