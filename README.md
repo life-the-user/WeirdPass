@@ -19,9 +19,32 @@ Nothing can be secure 100% but at the moment its considered secure.
 There are several factors the stetament is based on:
 * The code is simple _(supposed to be)_ and anyone can easily understand how it works.
 * The code is using [argon2](https://github.com/P-H-C/phc-winner-argon2) hashing algorithm, and set by default to be as secure as possible.
+
+**If you found any major security issue please contact me through discord or email me _(email supposed to be here)_**.
 ### DISCLAIMER: You are using it on your own risk!
 * **No one can guarantee** that the version that you are using doesnt have any security flaws.               
 _(most likely it doesnt, even if so I would immediately fix it and announce about it)_                 
 * Also **your Master Password must be [secure enough](https://www.security.org/how-secure-is-my-password/)** in case of a bruteforce attack, othewise 💀...
 * I highly recommend **being up to date and sometimes visit this repo for news**, keep in mind that **every update the output password that you were usually using might change**.
+## Installation:
+To install WeirdPass you simply should follow these steps:
+* Install [argon2](https://github.com/P-H-C/phc-winner-argon2)
+    * Say big thanks to argon2 devs
+    * Install using whatever package manager you are using
+* Download the latest version of WeirdPass from [downloads](https://github.com/p0pcat/test/tree/main/downloads)
+* Execute it
+    * Put the downloaded WeirdPass.sh wherever you want
+    * Copy the path to it
+    * execute it using `source ~/path-to/WeirdPass.sh`
+## Contribution
+If you want to help me with improving this project I'm really happy to see you, to make it simpler here are the main "rules" to follow:
+* Security is number one
+* Keep the as code as simple as possible
+* Please comment more than usual
+
+For now the code is ugly, need improvements and new features but as time goes I'm sure everything will be much more advanced.
+
+
+
+If you found any grammar mistakes ect. excuse me 😳...
 
