@@ -24,7 +24,7 @@ There are several factors the stetament is based on:
 * The code is using [argon2](https://github.com/P-H-C/phc-winner-argon2) hashing algorithm, and set by default to be as secure as possible.
 
 **If you found any major security issue please contact me through discord or email me _(email supposed to be here)_**.
-### DISCLAIMER: You are using it on your own risk!
+### DISCLAIMER: You are using it at your own risk!
 * **No one can guarantee** that the version that you are using doesnt have any security flaws.               
 _(most likely it doesnt, even if so I would immediately fix it and announce about it)_                 
 * Also **your Magic Word must be creative enough and Master Password must be [secure enough](https://www.security.org/how-secure-is-my-password/)** in case of a bruteforce attack, othewise 💀...
