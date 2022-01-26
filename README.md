@@ -12,6 +12,8 @@ For example:
 |`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/reddit.com`|`CnG18L7iqp\|oRyMGJJBIDCek)juQ`|
 |`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/github.com`|`4r@E8yiS2F2Ke$z7XX1pG0Xr3zX=wzQB`|
 
+**[WARNING]: Dont use similar syntax for Master Password and Magic Word as shown in examples above!**
+
 Basically this "Password Manager" doesnt store anything and everything can be accessed anywhere.
 ## Is it secure?
 Nothing can be secure 100% but at the moment its considered secure. 
@@ -24,7 +26,7 @@ There are several factors the stetament is based on:
 ### DISCLAIMER: You are using it on your own risk!
 * **No one can guarantee** that the version that you are using doesnt have any security flaws.               
 _(most likely it doesnt, even if so I would immediately fix it and announce about it)_                 
-* Also **your Master Password must be [secure enough](https://www.security.org/how-secure-is-my-password/)** in case of a bruteforce attack, othewise 💀...
+* Also **your Magic Word must be creative enough and Master Password must be [secure enough](https://www.security.org/how-secure-is-my-password/)** in case of a bruteforce attack, othewise 💀...
 * I highly recommend **being up to date and sometimes visit this repo for news**, keep in mind that **every update the output password that you were usually using might change**.
 ## Installation:
 To install WeirdPass you simply should follow these steps:
