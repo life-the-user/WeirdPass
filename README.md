@@ -12,7 +12,8 @@ For example:
 |`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/reddit.com`|`CnG18L7iqp\|oRyMGJJBIDCek)juQ`|
 |`N3$Er%g0nN@-g1v3/y0u^Up`|`CoolUsername/github.com`|`4r@E8yiS2F2Ke$z7XX1pG0Xr3zX=wzQB`|
 
-**[WARNING]: Dont use similar syntax for Master Password and Magic Word as shown in examples above!**
+**[WARNING]: NEVER use similar syntax for Master Password and Magic Word as shown in examples above!                                         
+THIS WILL GIVE THE ATTACKER CLUES HOW TO BRUTEFORCE**
 
 Basically this "Password Manager" doesnt store anything and everything can be accessed anywhere.
 ## Is it secure?
