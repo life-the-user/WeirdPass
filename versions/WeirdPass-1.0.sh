@@ -72,7 +72,7 @@ echo "Generating...
 ARG2=$(echo "$HMW" | argon2 $HMP -t 200 -m 19 -e -p 4 -l 64)
 
 # the following settings should be alright  for the low-end devices
-# ARG2=$(echo "$HMW" | argon2 $HMP -t 150 -m 16 -e -p 2 -l 64)
+# ARG2=$(echo "$HMW" | argon2 $HMP -t 50 -m 16 -e -p 2 -l 64)
 
 
 
