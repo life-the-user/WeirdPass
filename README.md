@@ -46,5 +46,6 @@ For now the code is ugly, need improvements and new features but as time goes I'
 
 
 
-If you found any grammar mistakes ect. excuse me 😳...
+If you found any grammar mistakes ect. excuse me 😳...                                                
+Also I'm new to github so I can be dumb.
 
