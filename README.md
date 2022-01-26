@@ -1,1 +1,1 @@
-# hello there :>
+# Weird Password Manager
