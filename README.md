@@ -42,7 +42,7 @@ To install WeirdPass you simply should follow these steps:
 ## Contribution
 If you want to help me with improving this project I'm really happy to see you, to make it simpler here are the main "rules" to follow:
 * Security is number one
-* Keep the as code as simple as possible
+* Keep the code as simple as possible
 * Please comment more than usual
 
 For now the code is ugly, need improvements and new features but as time goes I'm sure everything will be much more advanced.
