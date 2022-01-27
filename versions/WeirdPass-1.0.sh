@@ -18,9 +18,6 @@
 
 
 # this just verifies the inputs
-
-SET="0"
-
 echo "
 WeirdPass 1.0:
 
@@ -67,6 +64,10 @@ echo "
 
 echo "Generating...
 "
+
+# this is not for additional security reasons but rather to keep the argon2 output constant
+HMP=$(echo -n "$MP" | shasum --algorithm 256)
+HMW=$(echo -n "$MW" | shasum --algorithm 256)
 
 # the settings here are set to make bruteforce impossible 
 ARG2=$(echo "$HMW" | argon2 $HMP -t 200 -m 19 -e -p 4 -l 64)
