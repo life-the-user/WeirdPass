@@ -38,9 +38,8 @@ To install WeirdPass you simply should follow these steps:
 * Execute it
     * Put the downloaded WeirdPass.sh wherever you want
     * Copy the path to it
-    * add execution permission by `chmod +x ~/path-to/WeirdPass.sh`
-    * execute it: `~/path-to/WeirdPass.sh`
-    * **or** simply execute it using `bash ~/path-to/WeirdPass.sh`
+    * And execute it using `source ~/path-to/weirdpass.sh`                                         
+(I'm currently working on adding execution using `zsh`, `bash` and `~/path-to/weirdpass.sh`)
 ## Contribution
 If you want to help me with improving this project I'm really happy to see you, to make it simpler here are the main "rules" to follow:
 * Security is number one
