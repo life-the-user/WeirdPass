@@ -45,9 +45,6 @@ fi
 
 echo ""
 
-# this is not for additional security reasons but rather to keep the argon2 output constant
-HMP=$(echo -n "$MP" | shasum --algorithm 256)
-HMW=$(echo -n "$MW" | shasum --algorithm 256)
 
 # this just verifies the inputs
 echo -n "Please enter the magic word... "
@@ -61,6 +58,9 @@ if [[ "$MWV" != "$MWV" ]]; then
 	ec=0 
 	return $ec 2>/dev/null || exit $ec
 fi
+
+
+
 
 echo "
 "
