@@ -1,4 +1,4 @@
-# !/usr/bin/env bash
+# !/usr/bin/env zsh
 
 # Weird password manager 1.0
 
