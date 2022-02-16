@@ -4,14 +4,14 @@ WeirdPass is a simple but at the same time weird password manager/generator that
 ## How does it work?
 It generates a constant and secure password out of 2 inputs: `Master Password` and `Magic Word`. It works similarly to any hashing algorithms and uses [argon2](https://github.com/P-H-C/phc-winner-argon2) to generate it.
 * **Master Password** - Should be a [**secure password**](https://www.security.org/how-secure-is-my-password/).
-* **Magic Word** - Can be absolutely anything that identifies the account.
+* **Magic Word** - Should be a creative and unique account identifier.
 
 For example: 
 |Master Password|Magic Word| Output|
 |----|-----|-----| 
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/twIttEr~cOm`|`g1Vh9OR\|rp#ADvMEbygdO@BCwGshw\|\|`| 
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/rEddIt~cOm`|`CnG18L7iqp\|oRyMGJJBIDCek)juQ`|
-|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/gIthUb~cOm`|`4r@E8yiS2F2Ke$z7XX1pG0Xr3zX=wzQB`|
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/twIttEr~cOm`|`2Md<e8KNwhOOas0z4nwX*ECh3299`| 
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/rEddIt~cOm`|`KZ\)F31n1@guixIQ4f9PZtjMR4EXf\]`|
+|`N3$Er%g0nN@-g1v3/y0u^Up`|`CooLuSeRNaMe/gIthUb~cOm`|`q3C_N9PP0rSV0gEQDwg%Mgf38c\'V`|
 
 **[WARNING]: NEVER use similar syntax for Master Password and Magic Word as shown in examples above!                                         
 This will give the attacker clues how to bruteforce!**
@@ -39,8 +39,9 @@ To install WeirdPass you simply should follow these steps:
 * Execute it
     * Put the downloaded WeirdPass.sh wherever you want
     * Copy the path to it
-    * And execute it using `zsh ~/path-to/weirdpass.zsh`                                         
-(I'm currently rewriting the code to work in clear bash)
+    * Make it executable by `chmod +x ~/path-to/weirdpass.sh`
+    * And execute it just `~/path-to/weirdpass.sh`                                         
+**(I strongly recommend reading the code before execution)**
 ## Contribution
 If you want to help me with improving this project I'm really happy to see you, to make it simpler here are the main "rules" to follow:
 * Security is number one
