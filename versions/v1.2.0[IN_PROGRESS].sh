@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Weird password manager 1.1.1
+# Weird password manager 1.2.0
 
 
 # this just verifies the inputs
@@ -11,7 +11,7 @@ echo "
   \\ V  V /|  __| (_| \\__ \\__ \  													
    \\_/\\_/ |_|   \\__,_|___|___/
    
-Version: 1.1.1
+Version: 1.2.0
 "
 
 
