@@ -40,7 +40,7 @@ read -s MW
 echo -n "Verify... "
 read -s MWV
 
-if [[ "$MWV" != "$MWV" ]]; then
+if [[ "$MW" != "$MWV" ]]; then
 	echo "Magic words dont match"
 	exit 0
 fi
