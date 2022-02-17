@@ -1,5 +1,5 @@
 ## Update plan:
-* For v1.1.2
+* For v1.2.0
 
 ### Features:
 * error if argon2 is not installed
