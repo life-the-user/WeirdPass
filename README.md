@@ -35,7 +35,7 @@ To install WeirdPass you simply should follow these steps:
 * Install [argon2](https://github.com/P-H-C/phc-winner-argon2)
     * Say big thanks to argon2 devs
     * Install using whatever package manager you are using
-* Download the latest version of WeirdPass from [releases](https://github.com/life-the-user/WeirdPass/releases/tag/Latest) or [versions in the code](https://github.com/life-the-user/WeirdPass/blob/main/versions/WeirdPass-v1.1.0.sh).
+* Download the latest version of WeirdPass from [releases](https://github.com/life-the-user/WeirdPass/releases/tag/Latest) or [versions in the code](https://github.com/life-the-user/WeirdPass/blob/main/versions/).
 * Execute it
     * Put the downloaded WeirdPass.sh wherever you want
     * Copy the path to it
