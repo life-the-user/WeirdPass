@@ -8,7 +8,7 @@
 * [❌]improve the symbol algorithm
 	* find a way to add even more possible symbols in the output
 	* shuffle the output to prevent more symbols be on the left side (maybe will be implemented)
-* [❌]make the process look cool(add some emojis and maybe animations)
+* [❔]make the process look cool(add some emojis and maybe animations)
 
 ### Bug Fixes:
 
