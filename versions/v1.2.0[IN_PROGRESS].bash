@@ -14,7 +14,13 @@ echo "
 Version: 1.2.0
 "
 
+# checks if argon2 is installed(credits to Cake for code)
+if ! which argon2 >/dev/null; then 
+	echo "You dont have argon2 installed or its not accessible."
+	exit 0
+fi
 
+# this just verifies the inputs
 echo -n "Please enter the Master Password... "
 read -s master_pass
 
