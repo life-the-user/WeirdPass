@@ -77,9 +77,7 @@ ${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Inputs do not match
 ${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Inputs match
 "
 fi
-
 loading
-
 # just reading user inputs
 printf "${dark_gray}[${nc}${purple}${nc}${dark_gray}]${nc} Magic Word "
 read -s magic_word
