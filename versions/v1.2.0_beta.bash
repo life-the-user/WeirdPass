@@ -95,7 +95,7 @@ loading
 # prevent user from inputing blank variables, it breaks the code
 if [[ "$magic_word" == "" ]]; then
 	printf "
-${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} The input string is empty
+${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Input string is empty
 "
 	exit 0 
 
