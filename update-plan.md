@@ -3,7 +3,7 @@
 
 ### Features:
 * [✅]error if argon2 is not installed
-* [❌]make 1st hashing using argon2 lightest settings
+* [❔]make 1st hashing using argon2 lightest settings
 * [❌]make more lighter options for argon2 settings
 * [❌]improve the symbol algorithm
 	* find a way to add even more possible symbols in the output
