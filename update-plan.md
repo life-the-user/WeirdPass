@@ -11,6 +11,6 @@
 * [❔]make the process look cool(add some emojis and maybe animations)
 
 ### Bug Fixes:
+* [✅]strange backslashes behind symbols fixed
 
-
-[Note]:✅ - done and implemented, ❔ - in progress, ❌ - not even started
+[Note]:✅ - done and implemented, ❔ - in progress, ❌ - not even started or canceled
