@@ -35,12 +35,12 @@ To install WeirdPass you simply should follow these steps:
 * Install [argon2](https://github.com/P-H-C/phc-winner-argon2)
     * Say big thanks to argon2 devs
     * Install using whatever package manager you are using
-* Download the latest version of WeirdPass from [releases](https://github.com/life-the-user/WeirdPass/releases/tag/Latest) or [versions in the code](https://github.com/life-the-user/WeirdPass/blob/main/versions/).
+* Download the latest version of WeirdPass from [releases](https://github.com/life-the-user/WeirdPass/releases/) or latest `vN.N.N.bash` in the code.
 * Execute it
-    * Put the downloaded WeirdPass.sh wherever you want
+    * Put the downloaded WeirdPass.bash wherever you want
     * Copy the path to it
-    * Make it executable by `chmod +x ~/path-to/weirdpass.sh`
-    * And execute it just `~/path-to/weirdpass.sh`                                         
+    * Make it executable by `chmod +x ~/path-to/weirdpass.bash`
+    * And execute it just `~/path-to/weirdpass.bash`                                         
 **(I strongly recommend reading the code before execution)**
 ## Contribution
 If you want to help me with improving this project I'm really happy to see you, to make it simpler here are the main "rules" to follow:
