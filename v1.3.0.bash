@@ -55,7 +55,7 @@ loading
 # its just to make argon2 work but also for security
 if (( ${#master_pass} <= 7 )); then 
 	printf "
-${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Input string is not long enough
+${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Input string is not long enough (n >= 8 chars)
 "
 	exit 0
 else 
@@ -109,7 +109,7 @@ loading
 # its just to make argon2 work but also for security
 if (( ${#magic_word} <= 7 )); then 
 	printf "
-${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Input string is not long enough
+${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Input string is not long enough (n >= 8 chars)
 "
 	exit 0
 else 
