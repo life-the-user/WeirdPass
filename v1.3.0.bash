@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Weird password manager 1.2.0
+# Weird password manager 1.3.0
 
 # variables for coloring the text
 purple='\033[0;35m'
@@ -20,7 +20,7 @@ printf "
   ${purple}\\ V  V /${nc}${blue}|  __| (_| \\__ \\__ \  ${nc}													
    ${purple}\\_/\\_/${nc} ${blue}|_|   \\__,_|___|___/${nc}
    
-${red}Version:${nc} ${light_red}1.2.0${nc}
+${red}Version:${nc} ${light_red}1.3.0${nc}
 "
 
 # just to make the "verification" proccess look cool
@@ -151,20 +151,24 @@ loading
 
 # this is NOT for additional security reasons but rather to keep the argon2 output constant
 # and to test that its working
-hashed_master_pass=$(echo -n "$master_pass" | argon2 "$master_pass" -r)
-hashed_magic_word=$(echo -n "$magic_word" | argon2 "$master_pass" -r)
+# it should be -r to prevent argon2 hash being tooooo long
+argon2=$(echo -n "$master_pass" | argon2 "$magic_word" -r)
 
-
+# starts loading
+printf "${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Hash generation started\n"
+loading
+printf "${dark_gray}[${nc}${dark_gray}]${nc} ◃▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▹"
+loading
 # just to check that there is no errors
-if [[ $hashed_master_pass == "" || $hashed_magic_word == "" ]]; then
+if [[ $argon2 == "" ]]; then
 
-	printf "${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Argon2 error
+	printf "
+${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Argon2 error
 "
 	exit 0
 
 	else 
-	printf "${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Argon2 lite hashing successful
-"
+	printf "\r${dark_gray}[${nc}${dark_gray}]${nc} ◂▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▹"
 fi
 
 loading
@@ -176,16 +180,43 @@ loading
 # The idea is that you can access your passwords wherever you are and on any device
 
 # YOU SACRIFISE TIME AND RECEIVE SECURITY
-argon2=$(echo "$hashed_magic_word" | argon2 "$hashed_master_pass" -t 100 -m 18 -e -p 2 -l 64)
 
+# this basically loops argon2 to rehash itself to make the proccess trackable
+for i in {2..20}; do
+	# pretty smart progress bar
+	load_fill="◂▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▸"
+	load_air="◃▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▯▹"
+	argon2=$(echo "$argon2" | argon2 "$argon2" -t 4 -m 18 -r -p 2 -l 60)
+	if [[ $argon2 == "" ]]; then
+		printf "${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Argon2 error
+"
+		exit 0
+	else
+		# pretty smart progress bar
+		load_fill=${load_fill:0:$i}
+		load_air=${load_air:$i}
+		printf "\r${dark_gray}[${nc}${dark_gray}]${nc} ${load_fill}${load_air}"
+	fi
+
+done
+
+# this is NOT for additional security reasons but rather to keep the argon2 output constant
+argon2=$(echo -n "$argon2" | argon2 "$argon2" -e -l 75)
+
+
+# just to check that there is no errors
 if [[ $argon2 == "" ]]; then
-	printf "${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Argon2 main hashing error
-"
+
+	printf "\n${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Argon2 error\n"
 	exit 0
-else
-	printf "${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Argon2 main hashing successful
-"
+
+	else 
+	printf "\r${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} ◂▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▸"
 fi
+loading
+
+printf "\r${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Hash generation completed"
+
 # this section will make last digit of the hash impact the length of the argon2 
 impact_thingy=${argon2: -1}
 
@@ -382,13 +413,16 @@ if ! [[ -z "$D2" || -z "$D3" || -z "$D4" || -z "$D5" ]]; then
 done
 
 loading
+
 # checks if there are the following symbols in the string, there is a chance that
 # it will be an error
 if [[ $output =~ ["!@#\$%^\&*()-_+={}|\\\"\';:/?.>,<"] ]]; then
-	printf "${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Symbols generation successful
+	printf "
+${dark_gray}[${nc}${green}✔${nc}${dark_gray}]${nc} Symbols generation successful
 "
 else 
-	printf "${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Symbols generation error
+	printf "
+${dark_gray}[${nc}${red}✘${nc}${dark_gray}]${nc} Symbols generation error
 "
 		exit 0
 fi
