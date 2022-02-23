@@ -9,6 +9,8 @@
 * [✅] Make main hashing more responsive
 	* by simply hashing the hash and reporting every loop
 * [❔] Add more possible symbols in one output
+* [❌] Make a WeirdPass version for testing
+	* looping with lite argon2 settings and testing symbols generation for errors
 
 ### Bug Fixes:
 
